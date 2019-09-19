@@ -8,6 +8,7 @@ int main(void)
 {
 	int i;
 	int o;
+	int u;
 
 	for (i = '0'; i <= '9'; ++i)
 	{
@@ -15,13 +16,11 @@ int main(void)
 	{
 	putchar(i);
 	putchar(o);
-	if (i <= '9')
-	{
-	if (o < '9')
+	u = i + o;
+	if (u != 'r')
 	{
 	putchar(',');
 	putchar(' ');
-	}
 	}
 	}
 	}
