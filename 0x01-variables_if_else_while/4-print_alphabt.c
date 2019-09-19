@@ -11,10 +11,11 @@ int main(void)
 	for (a = 'a'; a <= 'z'; ++a)
 	if (a == 'e')
 	{
-	a = 'f';
+	a = 'e';
 	}
 	else if (a == 'q')
-	a = 'r'
+	{
+	a = 'q';
 	}
 	else
 	{
