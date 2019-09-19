@@ -15,9 +15,9 @@ int main(void)
 	{
 	putchar(i);
 	putchar(o);
-	if ( i <= '9' )
+	if (i <= '9')
 	{
-	if ( o < '9')
+	if (o < '9')
 	{
 	putchar(',');
 	putchar(' ');
