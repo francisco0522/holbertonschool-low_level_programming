@@ -25,6 +25,8 @@ int main(void)
 	r = a * 10 + u;
 	if (q != r && i <= a)
 	{
+	if (i != a || u >= a)
+	{
 	putchar(i);
 	putchar(o);
 	putchar(' ');
@@ -34,6 +36,7 @@ int main(void)
 	{
 	putchar(',');
 	putchar(' ');
+	}
 	}
 	}
 	}
