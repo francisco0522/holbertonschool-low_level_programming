@@ -6,18 +6,18 @@
  */
 int main(void)
 {
-	int i = 9;
-	int o = 7;
-	int a = 9;
-	int e = 7;
+	int i = '9';
+	int o = '6';
+	int a = '9';
+	int e = '8';
 	int r;
-	int q;
+	int w;
 
 	r = a*10+e;
-	q = i*10+o;
-	if (r != q)
+	w = i*10+o;
+	if (r != w)
 	{
-	putchar(q);
+	putchar(w);
 	putchar('\n');
 	putchar(r);
 	putchar('\n');
