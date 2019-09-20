@@ -10,9 +10,7 @@ int main(void)
 	int o;
 	int a;
 	int u;
-	int q;
-	int r;
-
+	
 	for (i = '0'; i <= '9'; ++i)
 	{
 	for (o = '0'; o <= '9'; ++o)
@@ -21,11 +19,12 @@ int main(void)
 	{
 	for (u = '0'; u <= '9'; ++u)
 	{
-	q = i * 10 + o;
-	r = a * 10 + u;
-	if (q != r && i <= a)
+	if (i == o  && i == a && i == u && o == a && o == u && a == u)
 	{
-	if (i != a || u >= a)
+	}
+	else if (i <= a)
+	{
+	if (i != a || a <= u)
 	{
 	putchar(i);
 	putchar(o);
