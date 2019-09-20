@@ -6,13 +6,8 @@
  */
 int main(void)
 {
-	int i;
-	int o;
-	int a;
-	int u;
-	int q;
-	int r;
-	
+	int i, o, a, u, q, r;
+
 	for (i = '0'; i <= '9'; ++i)
 	{
 	for (o = '0'; o <= '9'; ++o)
