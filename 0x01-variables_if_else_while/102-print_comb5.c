@@ -21,8 +21,8 @@ int main(void)
 	{
 	for (u = '0'; u <= '9'; ++u)
 	{
-	r = a*10+u;
-	q = i*10+o;
+	r = a * 10 + u;
+	q = i * 10 + o;
 	if (r != q)
 	{
 	if (i <= a)
