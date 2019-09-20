@@ -23,7 +23,7 @@ int main(void)
 	{
 	q = i * 10 + o;
 	r = a * 10 + u;
-	if (q != r && i <= a && o <= u)
+	if (q != r && i <= a)
 	{
 	putchar(i);
 	putchar(o);
