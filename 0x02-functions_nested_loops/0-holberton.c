@@ -1,8 +1,12 @@
 #include "holberton.h"
+/* more headers goes there*/
+/* betty style doc for function main goes there*/
 /**
- * function main - print "Holberton
- * Return: Always 0.
- */
+* main - Entry point
+*
+* Return: Always 0 (Success)
+*/
+
 int main(void)
 {
 	_putchar('H');
