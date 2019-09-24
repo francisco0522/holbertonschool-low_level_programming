@@ -1,9 +1,9 @@
 #include"holberton.h"
 /**
- * print_times_table - check the code for Holberton School students.
- * @n: int n
- * Return: Always 0.
- */
+* print_times_table - check the code for Holberton School students.
+* @n: int n
+* Return: Always 0.
+*/
 void print_times_table(int n)
 {
 	int x, y, z;
@@ -47,4 +47,5 @@ void print_times_table(int n)
 	_putchar ('\n');
 	}
 	}
+	return;
 }
