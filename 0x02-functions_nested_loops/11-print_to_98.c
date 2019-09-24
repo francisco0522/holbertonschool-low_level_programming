@@ -1,7 +1,8 @@
-#include "holberton.h"
+#include"holberton.h"
+#include<stdio.h>
 /**
- * main - check the code for Holberton School students.
- *
+ * print_to_98 - check the code for Holberton School students.
+ * @n: int n
  * Return: Always 0.
  */
 void print_to_98(int n)
@@ -9,26 +10,24 @@ void print_to_98(int n)
 
 	if (n < 98)
 	{
-	for (; n == 98; n++)
-	{	
-	_putchar(n / 10 + '0');
-	_putchar(n % 10 + '0');
-	_putchar(',');
-	_putchar(' ');
+	while (n < 98)
+	{
+	printf("%d, ", n);
+	n++;
 	}
+	printf("%d", n);
+	printf("\n");
 	}
 	else if (n > 98)
 	{
-	for (; n == 98; n--)
+	while (n > 98)
 	{
-	_putchar(n / 10 + '0');
-	_putchar(n / 10 + '0');
-	_putchar(',');
-	_putchar(' ');
+	printf("%d, ", n);
+	n--;
 	}
+	printf("%d", n);
+	printf("\n");
 	}
 	else
-	{
-	_putchar(n);
-	}
+	printf("%d\n", n);
 }
