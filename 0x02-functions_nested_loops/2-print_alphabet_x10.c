@@ -2,17 +2,17 @@
 /**
 * print_alphabet_x10 - check the code for Holberton School students.
 *
-* Return: Always 0.
 */
 void print_alphabet_x10(void)
 {
-	char a;
+	int a;
 	int i;
 
-	for (i = 0; i < 9; i++)
+	for (i = 0; i < 10; ++i)
 	{
-	for (a = 'a'; a <= 'z'; ++a)
+	for (a = 97; a <= 122; ++a)
 	{
+	if (a  != 0)
 	_putchar(a);
 	}
 	_putchar('\n');
