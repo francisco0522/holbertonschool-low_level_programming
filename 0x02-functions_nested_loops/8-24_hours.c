@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-* main - Entry point
+* jack_bauer - Entry point
 *
 * Return: Always 0 (Success)
 */
