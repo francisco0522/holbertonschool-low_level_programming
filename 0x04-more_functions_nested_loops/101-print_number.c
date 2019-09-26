@@ -43,5 +43,6 @@ void print_number(int n)
 				y = (n % j);
 			}
 		}
+		_putchar('\n');
 	}
 }
