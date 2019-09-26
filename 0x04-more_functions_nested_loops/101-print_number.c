@@ -12,19 +12,18 @@ void print_number(int n)
 	i = 1;
 	y = 0;
 	if (n == 0)
+	{
 	_putchar('0');
+	}
 	if (n < 0)
 	{
 		n = n * -1;
 		_putchar('-');
 	}
-	if (n > i)
-	{
 		while (i < n)
 		{
 			i = i * 10;
 		}
-		
 		for (; i > 9;)
 		{
 			i = i / 10;
@@ -43,5 +42,5 @@ void print_number(int n)
 				y = (n % i);
 			}
 		}
-	}
+
 }
