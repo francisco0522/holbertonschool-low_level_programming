@@ -7,7 +7,7 @@
 
 void print_number(int n)
 {
-	int i, j, y;
+	int i, y;
 
 	i = 1;
 	y = 0;
@@ -24,23 +24,23 @@ void print_number(int n)
 		{
 			i = i * 10;
 		}
-		j = i;
-		for (; j > 9;)
+		
+		for (; i > 9;)
 		{
-			j = j / 10;
-			y = n / j;
+			i = i / 10;
+			y = n / i;
 			if (y <= 9)
 			{
 				_putchar(y + '0');
 			}
 			else
 			{
-				y = (n / j) % 10;
+				y = (n / i) % 10;
 				_putchar(y + '0');
 			}
-			if (j == 10)
+			if (i == 10)
 			{
-				y = (n % j);
+				y = (n % i);
 			}
 		}
 	}
