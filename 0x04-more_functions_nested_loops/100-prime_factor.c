@@ -23,7 +23,6 @@ int main(void)
 	i++;
 	}
 	}
-	printf("%ld ", maxf);
-	printf("\n");
+	printf("%ld\n", maxf);
 	return (0);
 }
