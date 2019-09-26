@@ -7,20 +7,16 @@
 
 void print_number(int n)
 {
-	int i, j, y, q;
+	int i, j, y;
 
 	i = 1;
 	y = 0;
-	q = 0;
-
 	if (n == 0)
-	{
 	_putchar(0 + '0');
-	}
 	if (n < 0)
 	{
 		n = n * -1;
-		q = 1;
+		_putchar('-');
 	}
 	if (n > i)
 	{
@@ -35,11 +31,6 @@ void print_number(int n)
 			y = n / j;
 			if (y <= 9)
 			{
-			if (q != 0)
-			{
-				_putchar('-');
-				q = 0;
-			}
 				_putchar(y + '0');
 			}
 			else
