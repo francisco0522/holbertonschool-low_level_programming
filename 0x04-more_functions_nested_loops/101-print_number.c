@@ -7,10 +7,11 @@
 
 void print_number(int n)
 {
-	int i, y;
+	int i, y, t, u;
 
 	i = 1;
 	y = 0;
+	t = 0;
 	if (n == 0)
 	{
 	_putchar('0');
@@ -22,7 +23,16 @@ void print_number(int n)
 	}
 		while (i < n)
 		{
+			if (i < 1000000000)
+			{
 			i = i * 10;
+			}
+			else
+			{
+			u = n % 10;
+			n = n / 10;
+			t = 1;
+			}
 		}
 		for (; i > 9;)
 		{
@@ -36,6 +46,10 @@ void print_number(int n)
 			{
 				y = (n / i) % 10;
 				_putchar(y + '0');
+			}
+			if (t == 1)
+			{
+			_putchar(u + '0');
 			}
 			if (i == 10)
 			{
