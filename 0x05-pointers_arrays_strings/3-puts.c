@@ -16,5 +16,5 @@ void _puts(char *str)
 	i++;
 	_putchar (c);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
