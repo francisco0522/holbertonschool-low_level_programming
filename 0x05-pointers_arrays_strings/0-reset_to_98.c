@@ -1,10 +1,10 @@
 #include"holberton.h"
 /**
-* reset_to_98 - draws a diagonal line on the terminal
+* reset_to_98 - takes a pointer and updates to 98
 * @n: int n
-* Return: Always 0 (Success)
+*
 */
 void reset_to_98(int *n)
 {
-	*n = 98;	
+	*n = 98;
 }
