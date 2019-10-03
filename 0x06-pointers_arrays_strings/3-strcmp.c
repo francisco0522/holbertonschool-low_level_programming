@@ -7,10 +7,8 @@
 */
 int _strcmp(char *s1, char *s2)
 {
-	int i, j, k;
+	int i;
 
-	i = s1[0];
-	j = s2[0];
-	k = i - j;
-	return (k);
+	i = *s1 - *s2;
+	return (i);
 }
