@@ -7,8 +7,23 @@
 */
 int _strcmp(char *s1, char *s2)
 {
-	int i;
+	int i, a, b, c;
 
-	i = *s1 - *s2;
-	return (i);
+	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
+	{
+	a = *s1;
+	b = *s2;
+	if (a != b)
+	{
+	c = a - b;
+	break;
+	}
+	else
+	{
+	c = 0;
+	}
+	i++;
+	}
+
+	return (c);
 }
