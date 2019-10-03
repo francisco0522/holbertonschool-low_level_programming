@@ -7,7 +7,7 @@
 */
 int _strcmp(char *s1, char *s2)
 {
-	int i, a, b, c;
+	int i;
 
 	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
 	{
@@ -17,10 +17,7 @@ int _strcmp(char *s1, char *s2)
 		}
 		else
 		{
-		a = s1[i];
-		b = s2[i];
-		c = a - b;
-		return (c);
+		return (s1[i] - s2[i]);
 		}
 	}
 	return (0);
