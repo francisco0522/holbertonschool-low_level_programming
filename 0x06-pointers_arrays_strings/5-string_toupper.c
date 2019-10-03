@@ -12,7 +12,7 @@ char *string_toupper(char *a)
 	{
 		if (a[i] > 96 && a[i] < 123)
 		{
-		[i] = a[i] - 32;
+		a[i] = a[i] - 32;
 		}
 	}
 	return (a);
