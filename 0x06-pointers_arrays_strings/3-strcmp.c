@@ -1,10 +1,9 @@
 #include "holberton.h"
 /**
 * *_strcmp - compares two strings
-* @dest: char dest
-* @src: char src
-* @n: int n
-* Return: dest.
+* @s1: char s1
+* @s2: char s2
+* Return: valu
 */
 int _strcmp(char *s1, char *s2)
 {
