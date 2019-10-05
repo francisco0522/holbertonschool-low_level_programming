@@ -13,6 +13,7 @@ int main(void)
 	j = 0;
 	k = 1;
 	l = 0;
+	sum = 0;
 
 	for (; i < 1;)
 	{
