@@ -11,13 +11,13 @@ int main(void)
 
 	j = 0;
 	k = 1;
-	for (i = 0; i < 50; i++)
+	for (i = 0; i < 49; i++)
 	{
 	l = j + k;
 	temp = k;
 	k = l;
 	j = temp;
-	if (i < 49)
+	if (i < 48)
 	{
 	printf("%ld, ", l);
 	}
