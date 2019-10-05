@@ -7,25 +7,24 @@
 */
 int main(void)
 {
-	long i, j, k, l, temp, d, m;
+	long i, j, k, l, temp;
 
 	j = 0;
 	k = 1;
-	for (i = 0; i < 49; i++)
+	for (i = 0; i < 50; i++)
 	{
 	l = j + k;
 	temp = k;
 	k = l;
 	j = temp;
-	if (i < 48)
+	if (i < 49)
 	{
 	printf("%ld, ", l);
 	}
 	else
 	{
-	printf("%ld", l);
+	printf("%ld\n", l);
 	}
 	}
-	printf("\n");
 	return (0);
 }
