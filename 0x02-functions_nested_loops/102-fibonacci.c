@@ -17,7 +17,14 @@ int main(void)
 	temp = k;
 	k = l;
 	j = temp;
+	if (i < 49)
+	{
 	printf("%ld, ", l);
+	}
+	else
+	{
+	printf("%ld", l);
+	}
 	}
 	printf("\n");
 	return (0);
