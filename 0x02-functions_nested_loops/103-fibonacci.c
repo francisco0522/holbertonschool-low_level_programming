@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-	long i, j, k, l, temp;
+	long i, j, k, l, sum, temp;
 
 	i = 0;
 	j = 0;
@@ -24,7 +24,8 @@ int main(void)
 			j = temp;
 			if ((l % 2) == 0)
 			{
-				printf("%ld", l);
+			sum = sum + l;
+				printf("%ld", sum);
 				if (l == 3524578)
 				{
 					printf("\n");
