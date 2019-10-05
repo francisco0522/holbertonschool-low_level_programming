@@ -25,15 +25,6 @@ int main(void)
 			if ((l % 2) == 0)
 			{
 			sum = sum + l;
-				printf("%ld", sum);
-				if (l == 3524578)
-				{
-					printf("\n");
-				}
-				else
-				{
-					printf(", ");
-				}
 			}
 		}
 		else
@@ -41,5 +32,6 @@ int main(void)
 			i++;
 		}
 	}
+	printf("%ld\n", sum);
 	return (0);
 }
