@@ -5,7 +5,7 @@
 *
 * Return: Always 0.
 */
-void main(void)
+int main(void)
 {
 	int  i, j;
 
@@ -15,8 +15,8 @@ void main(void)
 		if (((i % 3) == 0) || ((i % 5) == 0))
 		{
 			j = j + i;
-			printf("%d", j);
-			printf("\n");
 		}
 	}
+	printf("%d\n", j);
+	return (0);
 }
