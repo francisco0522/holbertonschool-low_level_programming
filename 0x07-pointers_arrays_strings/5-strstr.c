@@ -1,21 +1,25 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
-* main - check the code for Holberton School students.
-*
+* *_strstr - locates a substring
+* @haystack: char haystack
+* @needle: char needle
 * Return: Always 0.
 */
 char *_strstr(char *haystack, char *needle)
 {
-while (haystack)
+	while (*haystack != '\0')
 	{
-		if (*haystack == *needle)
+	char *h = haystack;
+	char *n = needle;
+		while (*haystack == *n && *h != '\0' && *n != '\0')
 		{
-			return (haystack);
+			haystack++;
+			n++;
 		}
-		if (*haystack == '\0')
-			return (0);
-		haystack++;
+		if (*n == '\0')
+			return (h);
+			haystack = haystack + 1;
 	}
 	return (0);
 }
