@@ -16,6 +16,12 @@ int _sqrt_recursion(int n)
 		return (sqrtHolb(n, 0));
 	}
 }
+/**
+* sqrtHolb - make the sqrt function
+* @n: int n
+* @a: int a
+* Return: no se lo que retorna
+*/
 
 int sqrtHolb(int n, int a)
 {
