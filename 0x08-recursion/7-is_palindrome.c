@@ -24,7 +24,7 @@ int is_palindrome(char *s)
 
 int palin(char *s, int i, int f);
 {
-	if (i > f)
+	if (i < f)
 	{
 		if (s[i] == s[f])
 		{
