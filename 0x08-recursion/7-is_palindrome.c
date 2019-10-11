@@ -22,13 +22,13 @@ int is_palindrome(char *s)
 * Return: no se lo que retorna
 */
 
-int palin(char *s, int i, int f);
+int palin(char *s, int i, int f)
 {
 	if (i < f)
 	{
 		if (s[i] == s[f])
 		{
-			return (palin(s, i + 1; f - 1));
+			return (palin(s, i + 1, f - 1));
 		}
 		else
 		{
