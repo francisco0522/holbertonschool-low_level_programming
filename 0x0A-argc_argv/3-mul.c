@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
 * main - returns (0)
 * @argc: int argc
@@ -11,13 +12,13 @@ int main(int argc, char *argv[])
 
 	if (argc < 3)
 	{
-	printf("Error");
+	printf("Error\n");
 	return (1);
 	}
 	else
 	{
-	num1 = *argv[1] - '0';
-	num2 = *argv[2] - '0';
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[2]);
 	result = num1 * num2;
 	printf("%d\n", result);
 	return (0);
