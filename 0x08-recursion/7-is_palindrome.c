@@ -1,4 +1,5 @@
-#int primeNumber(int n, int a);
+int palin(char *s, int i, int f);
+int leng(char *s);
 #include "holberton.h"
 /**
 * is_palindrome - returns 1 if a string is a palindrome and 0 if not,
@@ -7,34 +8,53 @@
 */
 int is_palindrome(char *s)
 {
-	if (n < 2)
-	{
-		return (0);
-	}
-	else
-	{
-		return (primeNumber(n, 2));
-	}
+	int i, f;
+
+	i = 0;
+	f = leng(s);
+	return (palin(s, i, f - 1));
 }
 /**
-* primeNumber - search the prime number
-* @n: int n
-* @a: int a
+* palin - search a palindrome char
+* @s: int s
+* @i: int i
+* @f: int f
 * Return: no se lo que retorna
 */
 
-int primeNumber(int n, int a)
+int palin(char *s, int i, int f)
 {
-	if (n == a)
+	if (i < f)
 	{
-		return (1);
-	}
-	if (n % a == 0)
-	{
-		return (0);
+		if (s[i] == s[f])
+		{
+			return (palin(s, i + 1, f - 1));
+		}
+		else
+		{
+			return (0);
+		}
 	}
 	else
 	{
-		return (primeNumber(n, a + 1));
+		return (1);
 	}
+}
+/**
+* leng - return the lenght of a string
+*@s: char s
+*Return: No se que retorna
+*/
+int leng(char *s)
+{
+
+	if (*s != '\0')
+	{
+	return (1 + leng(s + 1));
+	}
+	else
+	{
+	return (0);
+	}
+
 }
