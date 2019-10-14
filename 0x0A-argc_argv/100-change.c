@@ -19,8 +19,8 @@ return (1);
 }
 else
 {
-fijo = 13;
-total = 13;
+fijo = atoi(argv[1]);
+total = fijo;
 if (total < 0)
 {
 printf("0");
