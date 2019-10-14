@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
 {
 int i, j,total, fijo, count;
 int dev[] = {25, 10, 5, 2, 1};
-    
+
 count = 0;
 if (argc != 2)
 {
