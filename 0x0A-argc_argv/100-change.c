@@ -21,7 +21,7 @@ else
 {
 fijo = atoi(argv[1]);
 total = fijo;
-if (total < 0)
+if (total <= 0)
 {
 printf("0\n");
 return (0);
