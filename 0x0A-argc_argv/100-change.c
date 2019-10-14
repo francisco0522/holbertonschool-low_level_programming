@@ -29,7 +29,7 @@ return (0);
 j = 0;
 for (i = 0; i < fijo;)
 {
-if (total - dev[j] >= 0)
+if ((total - dev[j]) >= 0)
 {
 total = total - dev[j];
 i = i + dev[j];
