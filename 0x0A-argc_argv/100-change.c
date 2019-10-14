@@ -35,11 +35,11 @@ total = total - dev[j];
 i = i + dev[j];
 count++;
 }
-else 
+else
 {
 j++;
 }
-}   
+}
 }
 printf("%d\n", count);
 return (0);
