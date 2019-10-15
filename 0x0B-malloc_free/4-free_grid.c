@@ -1,0 +1,19 @@
+#include"holberton.h"
+#include<stdlib.h>
+/**
+ * free_grid - frees a 2 dimensional grid
+ * @s1: char s1
+ * @s2: char s2
+ *
+ * Return: arr
+ */
+void free_grid(int **grid, int height)
+{
+	int i;
+
+	for (i = 0; i <= height; i++)
+	{
+		free(grid[i]);
+	}
+		free(grid);
+}
