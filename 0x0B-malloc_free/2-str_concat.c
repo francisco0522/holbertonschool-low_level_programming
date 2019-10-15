@@ -32,11 +32,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		return ('\0');
 	}
-	for (k = 0; k <= i; k++)
+	for (k = 0; k < i; k++)
 	{
 		arr[k] = s1[k];
 	}
-	for (l = 0; l <= j; l++)
+	for (l = 0; l < j; l++)
 	{
 		arr[i + l] = s2[l];
 	}
