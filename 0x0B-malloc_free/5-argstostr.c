@@ -4,12 +4,12 @@
 * argstostr - concatenates all the arguments of your program
 *@ac: int ac
 *@av: char av
-* Return: this function return a char pointer to the concatenate arguments.
+* Return: 0
 */
 char *argstostr(int ac, char **av)
 {
 char *arr, *a;
-int i, j, k, l ,m, n;
+int i, j, k, l, m, n;
 
 n = 0;
 k = 0;
