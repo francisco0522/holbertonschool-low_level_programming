@@ -24,7 +24,7 @@ k++;
 k++;
 }
 k++;
-arr = malloc(sizeof(char) * k);
+arr =malloc(sizeof(char) * k);
 if (arr == NULL)
 return (NULL);
 a = arr;
