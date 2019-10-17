@@ -32,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		n = j;
 	}
-	arr = malloc(sizeof(*arr) * (n + 1));
+	arr = malloc(sizeof(*arr) * (i + n + 1));
 	if (arr == NULL)
 	{
 		return (NULL);
