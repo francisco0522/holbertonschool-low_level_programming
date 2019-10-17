@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include"holberton.h"
 /**
-* _calloc
+* _calloc - allocates memory for an array, using malloc
 * @nmemb: int nmemb
 * @size: int size
 *
