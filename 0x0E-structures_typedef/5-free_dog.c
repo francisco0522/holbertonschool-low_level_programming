@@ -1,8 +1,8 @@
 #include"dog.h"
 #include<stdlib.h>
 /**
- * free_dog - frees a 2 dimensional grid
- * @dog_t: int grid
+ * free_dog - free
+ * @d: int grid
  *
  * Return: arr
  */
