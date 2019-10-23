@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int num1, num2, res;
-	int (*result)(int, int);
+	int (*f)(int, int);
 
 	if (argc < 3)
 	{
@@ -22,13 +22,13 @@ int main(int argc, char *argv[])
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 
-	result = get_op_func(argv[2]);
-	if (result == NULL)
+	f = get_op_func(argv[2]);
+	if (f == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	res = result(num1, num2);
+	res = f(num1, num2);
 	printf("%d\n", res);
 	return (0);
 }
