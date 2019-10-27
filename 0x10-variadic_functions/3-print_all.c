@@ -1,6 +1,6 @@
 #include "variadic_functions.h"
 /**
- * char - prints char.
+ * print_char - prints char.
  * @cade: va_list
  * Return: Always 0.
  */
@@ -9,7 +9,7 @@ void print_char(va_list cade)
 	printf("%c", va_arg(cade, int));
 }
 /**
- * int - prints integer.
+ * print_int - prints integer.
  * @cade: va_list
  * Return: Always 0.
  */
@@ -18,7 +18,7 @@ void print_int(va_list cade)
 	printf("%d", va_arg(cade, int));
 }
 /**
- * float - prints float.
+ * print_float - prints float.
  * @cade: va_list
  * Return: Always 0.
  */
@@ -27,13 +27,14 @@ void print_float(va_list cade)
 	printf("%f", va_arg(cade, double));
 }
 /**
- * string - prints string.
+ * print_string - prints string.
  * @cade: va_list
  * Return: Always 0.
  */
 void print_string(va_list cade)
 {
 	char *cad = (va_arg(cade, char*));
+
 	if (cad == NULL)
 	{
 		printf("(nil)");
@@ -63,7 +64,7 @@ void print_all(const char * const format, ...)
 	};
 
 	va_start(ap, format);
-	while(format && format[i])
+	while (format && format[i])
 	{
 		j = 0;
 		while (cads[j].cade)
