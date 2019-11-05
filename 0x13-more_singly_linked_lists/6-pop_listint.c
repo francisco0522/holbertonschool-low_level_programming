@@ -18,8 +18,5 @@ int pop_listint(listint_t **head)
 		free(copy);
 		return (n);
 	}
-	else
-	{
-		return (0);
-	}
+	return (0);
 }
