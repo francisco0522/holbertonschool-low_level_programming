@@ -8,12 +8,12 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	int i;
+	unsigned int i;
 
 	i = 0;
 	if (head != NULL)
 	{
-		while (node && i < index)
+		while (i && i < index)
 		{
 			head = head->next;
 			i--;
