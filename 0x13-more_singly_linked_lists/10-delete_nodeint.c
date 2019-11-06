@@ -2,8 +2,7 @@
 /**
  * delete_nodeint_at_index - inserts a new node at a given position.
  * @head: listint_t
- * @idx: int
- * @n: n
+ * @index: int
  * Return: sum.
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
