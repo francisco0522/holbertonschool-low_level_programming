@@ -1,8 +1,8 @@
 #include "holberton.h"
 #include <math.h>
 /**
- * main - check the code for Holberton School students.
- *
+ * binary_to_uint - check the code for Holberton School students.
+ * @b: char;
  * Return: the converted number, or 0
  */
 unsigned int binary_to_uint(const char *b)
