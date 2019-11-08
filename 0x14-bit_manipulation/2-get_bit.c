@@ -1,7 +1,8 @@
 #include "holberton.h"
 /**
  * get_bit - check the code for Holberton School students.
- * @b: char;
+ * @n: int;
+ * @index: int;
  * Return: the converted number, or 0
  */
 int get_bit(unsigned long int n, unsigned int index)
