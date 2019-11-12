@@ -4,8 +4,8 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <string.h>
-#include <stdio.h> 
-#include <fcntl.h> 
+#include <stdio.h>
+#include <fcntl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
