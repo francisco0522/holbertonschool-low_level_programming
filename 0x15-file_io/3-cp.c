@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	do {
-		rd = read(op1, buff, 2014);
+		rd = read(op1, buff, 1014);
 		wr = write(op2, buff, rd);
 	} while (rd == 1024);
 	if (rd == -1)
