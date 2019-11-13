@@ -1,4 +1,4 @@
-#include "holberton.h"
+B#include "holberton.h"
 /**
  * main - copies the content of a file to another file.
  * @argv: char
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	do {
-		rd = read(op1, buff, 1014);
+		rd = read(op1, buff, 1024);
 		wr = write(op2, buff, rd);
 	} while (rd == 1024);
 	if (rd == -1)
