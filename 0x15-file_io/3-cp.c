@@ -8,7 +8,7 @@
 int main(int argc, char *argv[])
 {
 	int op1, op2, wr, rd;
-	char buff[bf];
+	char buff[1024];
 
 	if (argc != 3)
 	{
@@ -28,12 +28,12 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	do {
-		rd = read(op1, buff, bf);
+		rd = read(op1, buff, 2014);
 		wr = write(op2, buff, rd);
 	} while (rd == 1024);
 	if (rd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	if (wr == -1)
