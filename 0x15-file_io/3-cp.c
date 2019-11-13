@@ -30,13 +30,13 @@ int main(int argc, char *argv[])
 	do {
 		rd = read(op1, buff, 1024);
 		wr = write(op2, buff, rd);
-	} while (rd > 0);
+	} while (rd == 1024);
 	if (rd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]);
 		exit(98);
 	}
-	if (wr <= -1)
+	if (wr == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
