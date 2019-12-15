@@ -7,30 +7,37 @@
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	unsigned int i;
 	dlistint_t *copy, *node;
 
-	i = 0;
-	node = *head;
-	copy = malloc(sizeof(dlistint_t));
-	if (copy == NULL)
-
+	if (*head == NULL || head == NULL)
+		return (-1);
 	if (index == 0)
 	{
-		copy->next = node;
-		*head = copy;
-	}
-
-	while (i < (index - 1))
-	{
-		if (node == NULL)
+		if ((*head)->next == NULL)
 		{
-			free(copy);
+			free(*head);
+			*head = NULL;
+			return (1);
 		}
-		node = node->next;
-		i++;
+		copy = *head;
+		*head = copy->next;
+		(*head)->prev = NULL;
+		free(copy);
+		return (1);
 	}
-		copy->next = node->next;
-		node->next = copy;
-	return (0);
+	node = *head;
+	while (index > 1 && node->next)
+		node = node->next;
+		index--;
+	if (index == 1)
+	{
+		copy = node->next;
+		node->next = node->next;
+		if (node->next)
+			node->next = node;
+			node->prev = node;
+		free(copy);
+		return (1);
+	}
+	return (-1);
 }
