@@ -32,9 +32,10 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	if (index == 1)
 	{
 		copy = node->next;
-		node->next = node->next;
+		node->next = copy->next;
 		if (node->next)
-			node->next->prev = node;
+			node->next = node;
+			node->prev = node;
 		free(copy);
 		return (1);
 	}
