@@ -1,4 +1,4 @@
-#include "lists.h"
+include "lists.h"
 /**
  * insert_dnodeint_at_index - inserts a new node at a given position.
  * @h: ddlistint_t
@@ -18,9 +18,16 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (NULL);
 
 	copy->n = n;
+	while (node != NULL && node->prev != NULL)
+	{
+		headcopy = headcopy->prev;
+		*h = (*h)->prev;
+	}
 	if (idx == 0)
 	{
 		copy->next = node;
+		node->prev = copy;
+		copy->prev = NULL;
 		*h = copy;
 		return (copy);
 	}
