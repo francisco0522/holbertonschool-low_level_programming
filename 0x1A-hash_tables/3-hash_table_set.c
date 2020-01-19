@@ -1,9 +1,9 @@
 #include "hash_tables.h"
 /**
  * hash_table_set - adds an element to the hash table.
- * @ht - hash_table_t
- * @key - char
- * @value - char
+ * @ht: hash_table_t
+ * @key: char
+ * @value: char
  * Return: 1 if it succeeded, 0 otherwise.
  **/
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
@@ -15,19 +15,19 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	i = key_index((unsigned char *)key, ht->size);
 
-	if (insertElement(&(ht->array[i]), key, value) == NULL)
+	if (insert(&(ht->array[i]), key, value) == NULL)
 		return (0);
 
 	return (1);
 }
 /**
- * insertElement - adds an element to the hash table.
- * @element - hash_table_t
- * @key - char
- * @value - char
+ * insert - adds an element to the hash table.
+ * @element: hash_table_t
+ * @key: char
+ * @value: char
  * Return: element.
  **/
-hash_node_t *insertElement(hash_node_t **element, const char *key, const char *value)
+hash_node_t *insert(hash_node_t **element, const char *key, const char *value)
 {
 	hash_node_t *node;
 
