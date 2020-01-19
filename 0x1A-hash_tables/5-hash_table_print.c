@@ -9,12 +9,14 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *nod;
 	char *a;
 
+	if (!ht)
+		return
 	printf("{");
 	a = "";
 	for (i = 0; i < ht->size; i++)
 	{
 		nod = ht->array[i];
-		while(nod)
+		while (nod)
 		{
 			printf("%s'%s': '%s'", a, nod->key, nod->value);
 			a = ", ";
