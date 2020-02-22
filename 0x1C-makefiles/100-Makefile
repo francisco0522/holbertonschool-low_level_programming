@@ -1,0 +1,24 @@
+CC = gcc
+SRC = holberton.c main.c
+OBJ = $(SRC:.c=.o)
+NAME = holberton
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+all: $(NAME)
+
+	$(NAME): $(OBJ)
+		$(CC) $(OBJ) -o $(NAME)
+
+.PHONY : clean
+	clean:
+		$(RM) *~ $(NAME)
+
+.PHONY : oclean
+	oclean:
+		$(RM) $(OBJ)
+
+.PHONY : fclean
+	fclean: clean oclean
+
+.PHONE : re
+	re : fclean all
