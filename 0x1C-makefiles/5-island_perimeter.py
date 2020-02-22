@@ -14,10 +14,10 @@ def island_perimeter(grid):
             if element == 1:
                 if x != 0 and grid[y][x - 1] != 1:
                     par += 1
-                if x != numcols grid[y][x + 1] != 1:
+                if x != numcols and grid[y][x + 1] != 1:
                     par +=1
-                if y != 0 grid[y - 1][x] != 1:
+                if y != 0 and grid[y - 1][x] != 1:
                     par +=1
-                if y != numrows grid[y + 1][x] != 1:
+                if y != numrows and grid[y + 1][x] != 1:
                     par +=1
     return (par)
